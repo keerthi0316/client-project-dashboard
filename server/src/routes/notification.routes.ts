@@ -1,0 +1,1 @@
+import {Router} from 'express'; import {listNotifications,markRead,markAllRead} from '../controllers/notification.controller'; import {authenticate} from '../middleware/auth'; const r=Router();r.use(authenticate);r.get('/',listNotifications);r.patch('/:id/read',markRead);r.patch('/read-all',markAllRead);export default r;

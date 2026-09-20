@@ -1,0 +1,1 @@
+import {Router} from 'express'; import {listActivity} from '../controllers/activity.controller'; import {authenticate} from '../middleware/auth'; const r=Router();r.get('/',authenticate,listActivity);export default r;

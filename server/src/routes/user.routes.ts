@@ -1,0 +1,1 @@
+import {Router} from 'express'; import {authenticate,authorize} from '../middleware/auth'; import {listUsers,createUser,updateUser} from '../controllers/user.controller'; const r=Router();r.use(authenticate,authorize('ADMIN'));r.get('/',listUsers);r.post('/',createUser);r.patch('/:id',updateUser);export default r;
