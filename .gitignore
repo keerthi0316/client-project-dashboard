@@ -1,6 +1,6 @@
 node_modules/
-client/node_modules/
-server/node_modules/
+dist/
+*.tsbuildinfo
 
 .env
 .env.*
@@ -13,16 +13,3 @@ client/.env.*
 server/.env
 server/.env.*
 !server/.env.example
-
-dist/
-build/
-client/dist/
-server/dist/
-
-*.log
-.vscode/
-.idea/
-.DS_Store
-Thumbs.db
-desktop.ini
-coverage/

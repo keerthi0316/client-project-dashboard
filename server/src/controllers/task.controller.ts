@@ -116,7 +116,7 @@ export async function createTask(
 
   const p = await prisma.project.findUnique({
     where: {
-      id: req.params.projectId
+      id: String(req.params.projectId)
     }
   });
 
